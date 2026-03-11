@@ -1,0 +1,14 @@
+var test = { "division1": {
+
+"name":["Z","B","H"]
+
+},
+
+"division2": {
+
+"name" :["Y","A","G"]
+
+}
+
+}
+
