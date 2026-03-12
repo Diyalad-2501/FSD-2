@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo" style="color:blue"></p>
+    <script>
+        size = 15
+        function fs(){
+            x = document.getElementById('demo')
+            x.innerHTML = "Hello"
+            x.style.fontSize = size+"px"
+            if(size<=50){
+                size++
+            }
+        }
+        setInterval(fs,50)
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="increase()">Increase</button>
+    <button onclick="stop()">Stop</button>
+    <button onclick="decrease()">Decrease</button>
+    
+    <script>
+        size = 50
+        let test
+        x = document.getElementById('demo')
+        x.innerHTML = "Hello"
+
+        function f(font){
+             x.style.fontSize = size+'px'
+            }
+
+        function increase(){
+           clearInterval(test)
+            test = setInterval(()=>{
+                if(size<=200){
+                    f(size++)
+                }
+                else{
+                    clearInterval(test)
+                }
+            } , 1000)
+        }
+
+        function decrease(){
+            
+           test =  setInterval(()=>{
+            if(size>20){
+                f(size--)
+            }
+            else{
+                clearInterval(test)
+            }
+           } , 1000)
+        }
+
+        function stop(){
+            clearInterval(test)
+        }
+    </script>
+</body>
+</html>
+
+<!-- write , read , append , rename , unlink , mkdir , rmdir , copyfile -->
