@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //var a = {'name':'abc' , 'age':28 , 'ispass':false , 'address':{'city':'ahemdabad' ,'zip':'38008'},'subjects':['fsd','fcsp','toc'],'rank':null}
+        var obj = {'name':'abc','age':2}
+        console.log(obj)
+        console.log(obj.name)   
+        console.log(obj['age'])
+
+        document.write(obj)
+        document.write(obj.name)
+        document.write(obj['age'])
+        document.write(JSON.stringify(obj))
+
+        var o = '{"name":"abc","age":2}'
+        console.log(o.name)
+        var data = JSON.parse(o)
+        console.log(data)
+        console.log(data.name)
+        document.write('Hellooooo')
+    </script>
+</head>
+<body>
+
+</body>
+</html>

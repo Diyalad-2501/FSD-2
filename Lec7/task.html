@@ -1,0 +1,37 @@
+<!-- write json string with date property in yyyy-mm-dd format and print date in indian standard time  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f(){
+            var x = document.getElementById('b1')
+            const obj = JSON.parse('{"name":"Jay","dob":"2000-02-16"}')
+            a = new Date(obj.dob)
+            x.innerHTML = a
+        }
+
+        const sub = {"FSD":[{"topic":"Node" , "course":"begineer" , "content":["JSON","REPL","Module"]},{"topic":"Express" , "course":"begineer" , "content":["Routing","Validation","Mailer"]}]}
+
+        for(x in sub.FSD){
+            for(y in sub.FSD[x]){
+                document.write(sub.FSD[x][y]+"<br>")
+            }
+        }
+
+        for(x of sub.FSD){
+            console.log(x.topic)
+            console.log(x.course)
+            console.log(x.content)
+        }
+
+        const data = [{name:"a",age:28} ,{name:"b",age:22} , {name:"c",age:32}]
+    </script>
+</head>
+<body>
+    <button onclick="f(this)">Show button</button>
+    <p id="b1"></p>
+</body>
+</html>

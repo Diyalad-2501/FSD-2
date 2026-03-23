@@ -1,0 +1,5 @@
+[{"name":"Rohit","runs":52},{"name":"Kohli","runs":96},{"name":"Gill","runs":20},{"name":"Rahul","runs":33},{"name":"Tilak","runs":30}]
+[{"name":"Rohit","runs":52},{"name":"Kohli","runs":96},{"name":"Gill","runs":20},{"name":"Rahul","runs":33},{"name":"Tilak","runs":30},{"name":"Hardik","runs":52}]
+283
+14.15
+[{"name":"Rohit","runs":52},{"name":"Kohli","runs":96},{"name":"Hardik","runs":52}]
