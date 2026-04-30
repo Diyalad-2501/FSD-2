@@ -1,0 +1,5 @@
+expr = require('express')
+app = expr()
+i = require('./router_export')
+app.use('/p',i)
+app.listen(5556)

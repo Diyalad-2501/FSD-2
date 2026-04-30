@@ -1,0 +1,5 @@
+expr = require('express')
+app = expr()
+i = require('./task2')
+app.use('/a',i)
+app.listen(5558)
