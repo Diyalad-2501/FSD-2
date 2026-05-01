@@ -1,0 +1,10 @@
+<h1>Name: <%=name%></h1>
+<h1>Age: <%=age%></h1>
+<h1>Skill: <%=skill%></h1>
+<h1>Experience <%=exp%></h1>
+
+<% if(age>=18 && exp >=1 && skill !=='None') {%>
+ <h2>Eligibile</h2>
+<%} else{ %>
+    <h2>Not eligible</h2>
+<%}%>
